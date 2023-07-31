@@ -34,5 +34,7 @@ public class Program {
         sellerDao.update(seller);
         seller = sellerDao.findById(1);
         System.out.println(seller);
+
+        sellerDao.deleteById(10);
     }
 }
