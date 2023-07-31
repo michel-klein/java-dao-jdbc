@@ -24,5 +24,9 @@ public class Program {
         for (Seller sellerItem : sellerListAll) {
             System.out.println(sellerItem);
         }
+
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, new Department(2, null));
+        sellerDao.insert(newSeller);
+        System.out.println("New id: "+newSeller.getId());
     }
 }
