@@ -19,5 +19,10 @@ public class Program {
         for (Seller sellerItem : sellerList) {
             System.out.println(sellerItem);
         }
+
+        List<Seller> sellerListAll = sellerDao.findAll();
+        for (Seller sellerItem : sellerListAll) {
+            System.out.println(sellerItem);
+        }
     }
 }
